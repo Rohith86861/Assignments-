@@ -1,0 +1,889 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <!--    <h1 style="color:blue">Hello Word!</h1>
+Data given is: {{iNumber}}<br/>
+Given name is: {{strName}} <br/><br><br>
+User Object details : <br/>
+User Id/name : {{userObj.uid}}<br>
+Password : {{userObj.pwd}}
+<br>
+<br>
+<img [src]="imgURL">
+<br>
+<br>
+<button (click)="enableButton()">Enable</button>
+<button (click)="disableButton()">Diasable</button>
+<button [disabled]='bDisableButton'>A simple button</button>
+<br>
+<br>
+ <input #email placeholder="Enter your email id">
+ <button (click)="verifyEmail (email.value)"> Verify Email</button>  
+ <br>
+ <br>
+ <input type="text" [(ngModel)]="strNameTwoWayDataBinding">
+ <br>
+ Given Name : {{strNameTwoWayDataBinding}}    
+
+ <input type="text" [(ngModel)]="strNameParenToChild">
+ <app-child [strNameParenToChild] = 'strNameParenToChild'></app-child>-->
+ <br>
+ <section style="background-color: cornflowerblue; display: flex; justify-content: center;"><font size="+36" ><u>Assignment 1</u></font></section>
+<br>
+<br>
+ <h1>Question 3</h1><br>
+ <h1 style="color:blue">Rohith</h1>
+ <br><h1>Question 4</h1><br>
+ Data given is: {{iNumber}}<br/>
+ Given name is: {{strName}} <br/><br><br>
+ Student Object details : <br/>
+ Student name : {{userObj.uid}}<br>
+ Password : {{userObj.pwd}}
+ <br><h1>Question 5</h1><br>
+ <h2>Insurance Object details : </h2><br/>
+ policyNo : {{InsuranceObj.policyNo}}<br>
+ policyHoldersName : {{InsuranceObj.policyHoldersName}}<br>
+ AmountOnMaturity : {{InsuranceObj.AmountOnMaturity}}<br>
+ Nominee Name : {{InsuranceObj.Nominee_Name}}<br>
+ Monthly EMI to be paid : {{InsuranceObj.Monthly_EMI}}<br>
+ Duration of policy : {{InsuranceObj.Duration_Of_Policy}}<br>
+ <br>
+ <br>
+ <br>
+ <br><h1>Question 6</h1><br>
+ <img [src]="imgURL">
+ <br>
+ <br>
+ <br><h1>Question 7</h1><br>
+ <button (click)="enableButton()">Enable</button>
+ <button (click)="disableButton()">Diasable</button>
+ <button [disabled]='bDisableButton'>A simple button</button>
+ <br>
+ <br>
+ <br><h1>Question 8</h1><br>
+  <input #email placeholder="Enter your email id">
+  <button (click)="verifyEmail (email.value)"> Verify Email</button>  
+  <br>
+  <br>
+  <br><h1>Question 9</h1><br>
+  <input #phone placeholder="Enter your Phone Number">
+  <button (click)="verifyPhone(phone.value)"> Verify Phone</button>  
+  <br>
+  <br>
+  <br><h1>Question 10</h1><br>
+  <input type="text" [(ngModel)]="strNameTwoWayDataBinding">
+  <br>
+  Given Name : {{strNameTwoWayDataBinding}}   
+  <br><h1>Question 11</h1><br>
+  <input #user_id placeholder="Enter your User Id"> <br>
+  <input #password placeholder="Enter Password"><br>
+  <button (click)="login(user_id.value,password.value)"> Login</button>  
+  <br><h1>Question 12</h1><br>
+  <input type="text" [(ngModel)]="strNameParenToChild">
+  <app-child [strNameParenToChild] = 'strNameParenToChild'></app-child>
+  <br><h1>Question 13</h1><br>
+  <input type="text" [(ngModel)]='loginobj.uid' placeholder="Enter user id">
+  <input type="text" [(ngModel)]='loginobj.pwd' placeholder="Enter password">
+  <app-child [loginobj]='loginobj'></app-child>
+<br>
+<br>
+<section style="background-color: cornflowerblue; display: flex; justify-content: center;"><font size="+36" ><u>Assignment 2</u></font></section>
+<br>
+<br><h1>Question 4</h1><br>
+<button class="btn btn-success">Bootstap</button>
+<hr><br><h1>Question 5</h1><br>
+
+<button [ngClass]="['btn btn-danger','button123']" (click)="ButtonClicked()">Button</button>
+<hr><br><h1>Question 6</h1><br>
+
+ <div [ngClass]="(bCustomer == true)?'customer':'employee'">
+     <form method="get">
+         User Id : <input type="text"/> <br><br>
+         Password : <input type="text"/><br><br>
+         <input type="submit" value="Login"> <br><br> 
+     </form>
+     <button type="button" (click)="changeToCustomer()">Change To Customer </button>
+     <button type="button" (click)="changeToEmployee()">Change To Employee </button>
+
+ </div>
+ <hr><br><h1>Question 7</h1><br>
+
+<input type="text" [(ngModel)]="strColor"> <br><br>
+<p [ngStyle]="{'color':strColor}">color change in ngStyle</p>
+<hr><br><h1>Question 8</h1><br>
+<input type="text" [(ngModel)]="strColor"> <br><br>
+<input type="text" [(ngModel)]="strFontSize"><br><br>
+<p [ngStyle]="{'color':strColor,'font-size' : strFontSize + 'px'}">This is ngStyle</p>
+<hr><br><h1>Question 9</h1><br>
+
+color:<input type="text" [(ngModel)]="strColor"> &nbsp; &nbsp;
+font-size:<input type="text" [(ngModel)]="strFontSize">  &nbsp; &nbsp;
+Word-spacing:<input type="text" [(ngModel)]="strWordSpacing">  &nbsp; &nbsp;
+Text-align:<input type="text" [(ngModel)]="strTextAlign">  &nbsp; &nbsp;
+letter-spacing:<input type="text" [(ngModel)]="strLetterSpacing"><br><br>
+
+<p [ngStyle]="{'color':strColor,'font-size' : strFontSize + 'px','word-spacing':strWordSpacing,'text-align':strTextAlign,'letter-spacing':strLetterSpacing + 'mm'}">This is 5 parameter</p>
+<br>
+<hr><br><h1>Question 10</h1><br>
+
+<br>
+Uid:<input type="text" [(ngModel)]="strUID">
+PWD:<input type="text" [(ngModel)]="strPWD">
+
+<p *ngIf="(strUID.toUpperCase() == 'ROHITH' && strPWD == 'admin'); else elseBlock" [ngStyle]="{'color':'blue'}">Valid User</p>
+<ng-template #elseBlock><p [ngStyle]="{'color':'red'}">Invalid User</p></ng-template>
+<hr><br><h1>Question 11</h1><br>
+
+<input type="text" [(ngModel)]="strCustomer"><br><br>
+<p [ngStyle]="{'background-color':(strCustomer.toUpperCase() == 'YES')?'green':'red',color:'black'}">Chnage background colour of text by condition</p><br><br>
+<hr><br><h1>Question 12</h1><br>
+
+<ul>
+    <li *ngFor="let user of userList">
+        {{user.uid}},{{user.name}}
+    </li>
+</ul>
+<hr><br><h1>Question 13</h1><br>
+<div class="container">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <th>User Id</th>
+            <th>Name</th>
+            <th>Password</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of userList">
+                <td>{{user.uid}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.pwd}}</td>
+                <td><input type="button" value="Edit"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<hr><br><h1>Question 14</h1><br>
+
+<div class="container" >
+    <table class="table table-hover table-bordered" >
+        <thead style="background-color: cornflowerblue;">
+            <th>Employee Id</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Designation</th>
+            <th>Location</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let Emp of Emp">
+                <td>{{Emp.Empid}}</td>
+                <td>{{Emp.Name}}</td>
+                <td>{{Emp.dept}}</td>
+                <td>{{Emp.des}}</td>
+                <td>{{Emp.loc}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<hr><br><h1>Question 15</h1><br>
+
+<h2>Conditional Rendering</h2>
+<button type="button" (click)="goodMorning()">Good Morning</button> 
+<button type="button" (click)="goodMorning()">Good Evening</button>
+<div *ngIf= "bMorning == true">
+    <h2>Good Morning...</h2>
+</div>
+<div *ngIf= "bEvening == true">
+    <h2>Good Evening...</h2>
+</div>
+<br>
+<br>
+<input type="text" [(ngModel)]='strData'>
+<div [ngSwitch]='strData'>
+    <div *ngSwitchCase = "1">One</div>
+    <div *ngSwitchCase = "2">Two</div>
+    <div *ngSwitchCase = "3">Three</div>
+    <div *ngSwitchCase = "4">Four</div>
+    <div *ngSwitchCase = "5">Five</div>
+    <div *ngSwitchDefault>This is default...</div>
+</div>
+<br>
+<br>
+<hr><br><h1>Question 16</h1><br>
+
+<div class="card" style="width: 19em; margin:auto; background-image: linear-gradient(to right, rgb(213, 228, 230),lightskyblue);" >
+    <form method="get" id="form"  [ngStyle]="{'display':strLoginf}">
+
+    <p style="text-align:center; color:blue"><font size="+3"><u>Login</u></font></p>
+    <br>
+    <br>
+        User Id :
+         <input type="text" class="form-control"><br>
+        Password :
+        <input type="text" class="form-control"><br>
+
+        <a href ="javascript: void(0);" style="float: right;" (click)="registerform()"><font size="+1">Register</font></a>
+        <input type="submit" class="btn btn-primary"value="Login"> <br><br> 
+
+
+
+
+</form>
+<form method="get" [ngStyle]="{'display':strRegisterf}">
+    <p style="text-align:center; color: blue;"><font size="+3"><u>Register</u></font></p>
+    <br>
+    <br>
+
+    Full name : <input type="text" class="form-control"><br>
+    User Id : <input type="text" class="form-control"/> <br>
+    Password : <input type="text" class="form-control"/><br>
+    Conform Password : <input type="text" class="form-control"/><br><br>
+    <a href="javascript: void(0);" style="float: right;" (click)="loginform()"><font size="+1">login</font></a>  
+    <input type="submit" class="btn btn-primary" value="Register"> <br><br> 
+
+</form>
+
+</div>
+<br>
+<br>
+<section style="background-color: cornflowerblue; display: flex; justify-content: center;"><font size="+36" ><u>Assignment 3</u></font></section>
+<br>
+<div class="container">
+<div class="row">
+    <div class="col-4">
+        <div class="card ">
+            <div class="card-header">
+                <h1>Question 1</h1>
+            </div>
+            <div class="card-header">
+              <h4 style="color: blue;">Upper Case  and Lower case Pipe with fixed value</h4>  
+            </div>
+            <div class="card-body">
+            </div>
+                <div class="card-text">
+                Original String : {{strDataToConvert}}<br>
+                Given String in Upper Case : {{strDataToConvert | uppercase}}<br>
+                Given String in Lower Case : {{strDataToConvert | lowercase}}<br>
+            </div>
+        </div>
+        </div>
+    <div class="col-4">
+<div class="card ">
+    <div class="card-header">
+        <h1>Question 2</h1>
+    </div>
+    <div class="card-header">
+      <h4 style="color: blue;">Lower and Upper Pipe</h4>  
+    </div>
+    <div class="card-body">
+        <input type="text" [(ngModel)]='strDataToConvert'><br>
+    </div>
+        <div class="card-text">
+        Original String : {{strDataToConvert}}<br>
+        Given String in Upper Case : {{strDataToConvert | uppercase}}<br>
+        Given String in Lower Case : {{strDataToConvert | lowercase}}<br>
+    </div>
+</div>
+</div>
+<div class="col-4">
+<div class="card">
+    <div class="card-header">
+        <h1>Question 3</h1>
+    </div>
+    <div class="card-header">
+      <h4 style="color: blue;">Currency pipe</h4>  
+    </div>
+    <div class="card-body">
+        <input type="text" [(ngModel)]='iCurrencyData'><br>
+    </div>
+        <div class="card-text">
+            Amount in YEN : {{iCurrencyData | currency : 'YEN':"symbol"}}<br>
+        Amount in Urkrainian : {{iCurrencyData | currency : 'UAH':"symbol"}}<br>
+        Amount in Russian ruble : {{iCurrencyData | currency : "RUB" : "symbol"}}<br>
+        Amount in USD : {{iCurrencyData | currency : 'USD' : "symbol"}}<br>
+        Amount in INR : {{iCurrencyData | currency : 'INR'}}<br>
+        Amount in EUR : {{iCurrencyData | currency : 'EUR'}}<br>
+    </div>
+</div>
+</div>
+
+</div>
+<br>
+
+<div class="row">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">
+                <h1>Question 4</h1>
+            </div>
+            <div class="card-header">
+              <h4 style="color: blue;">Date Milliseconds,with date object and date object Pipe</h4>  
+            </div>
+            <div class="card-body">
+                <input type="text" [(ngModel)]='todayDateInMillis'><br>
+                <input type="text" [(ngModel)]='todayDateInDateObj'><br>
+                <input type="text" [(ngModel)]='todaysDateInStringFormat'><br>
+            </div>
+                <div class="card-text">
+                Todays date in millis : {{todayDateInMillis}}<br>
+                Todays date in millis piped to date pipe : {{todayDateInMillis|date}}<br><br>
+                Todays date in Date Obj : {{todayDateInDateObj}}<br>
+                Todays date in Date Obj with date pipe : {{todayDateInDateObj|date}}<br><br>
+                Todays date in String format : {{todaysDateInStringFormat}}<br>
+                Date in string format wioth date pipe: {{todaysDateInStringFormat|date}}<br>
+            </div>
+        </div>
+        </div>
+        <div class="col-5">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Question 5</h1>
+                </div>
+                <div class="card-header">
+                  <h4 style="color: blue;">Different date formats</h4>  
+                </div>
+                <div class="card-body">
+                    <input type="text" [(ngModel)]='todayDateInMillis'><br>
+                    <input type="text" [(ngModel)]='todayDateInDateObj'><br>
+                    <input type="text" [(ngModel)]='todaysDateInStringFormat'><br>
+                </div>
+                    <div class="card-text">
+                    Todays date in millis : {{todayDateInMillis}}<br>
+                    date in short : {{todayDateInMillis|date:'short'}}<br>
+                    date in medium : {{todayDateInMillis|date:'medium'}}<br>
+                    date in long : {{todayDateInMillis|date:'long'}}<br>
+                    date in full : {{todayDateInMillis|date:'full'}}<br>
+                    date in shortDate : {{todayDateInMillis|date:'shortDate'}}<br>
+                    date in mediumDate : {{todayDateInMillis|date:'mediumDate'}}<br>
+                    date in longDate : {{todayDateInMillis|date:'longDate'}}<br>
+                    date in fullDate : {{todayDateInMillis|date:'fullDate'}}<br>
+                    date in shortTime : {{todayDateInMillis|date:'shortTime'}}<br>
+                    date in mediumTime : {{todayDateInMillis|date:'mediumTime'}}<br>
+                    date in longTime : {{todayDateInMillis|date:'longTime'}}<br>
+                    date in fullTime : {{todayDateInMillis|date:'fullTime'}}<br>
+                  
+                </div>
+            </div>
+            </div>
+<div class="col-3">
+    <div class="card">
+        <div class="card-header">
+            <h1>Question 6</h1>
+        </div>
+        <div class="card-header">
+          <h4 style="color: blue;">Employee obj Pipe</h4>  
+        </div>
+        <div class="card-body">
+        </div>
+            <div class="card-text">
+            Json Object : {{jsonUserObj}}<br>
+            Json Object with json Pipe : {{jsonUserObj | json}}<br><br>
+          
+        </div>
+    </div>
+    </div>
+   </div> 
+   <br>
+   <div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h1>Question 7</h1>
+            </div>
+            <div class="card-header">
+              <h4 style="color: blue;">Insurance and student obj Pipe</h4>  
+            </div>
+            <div class="card-body">
+            </div>
+                <div class="card-text">
+                Json Insurance Object : {{jsonInsuranceObj}}<br>
+                Json Insurance Object with json Pipe : {{jsonInsuranceObj | json}}<br><br>
+                Json Student Array of Objects : {{jsonStudentObjs}}<br>
+                Json  Student Array of Objects with json Pipe : {{jsonStudentObjs | json}}<br><br>
+    
+            </div>
+        </div>
+        </div>
+        </div>
+        <br>
+        <div class=row>
+<div class="col-4">
+    <div class="card">
+        <div class="card-header">
+            <h1>Question 8</h1>
+        </div>
+        <div class="card-header">
+          <h4 style="color: blue;">Decimal Pipe</h4>  
+        </div>
+        <div class="card-body">
+            <input type="text" [(ngModel)]='iDataForDecimalPipe'><br>
+
+        </div>
+            <div class="card-text">
+                Original  : {{iDataForDecimalPipe}}<br>
+                using decimal pipe '1.0-2' : {{iDataForDecimalPipe | number : '1.0-2'}}<br>
+                using decimal pipe '1.0-3' : {{iDataForDecimalPipe | number : '1.0-3'}}<br>
+        </div>
+    </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">
+                <h1>Question 9</h1>
+            </div>
+            <div class="card-header">
+              <h4 style="color: blue;">Decimal only integer Pipe</h4>  
+            </div>
+            <div class="card-body">
+                <input type="text" [(ngModel)]='iDataForDecimalPipe'><br>
+    
+            </div>
+                <div class="card-text">
+                    Original  : {{iDataForDecimalPipe}}<br>
+                    using decimal pipe '1.0-0' : {{iDataForDecimalPipe | number : '1.0-0'}}<br>
+            </div>
+        </div>
+        </div>
+<div class="col-4">
+    <div class="card">
+        <div class="card-header">
+            <h1>Question 10</h1>
+        </div>
+        <div class="card-header">
+          <h4 style="color: blue;">Percent Pipe</h4>  
+        </div>
+        <div class="card-body">
+            <input type="text" [(ngModel)]='iDataForPercentPipe'><br>
+
+        </div>
+            <div class="card-text">
+                Original  : {{iDataForPercentPipe}}<br>
+                using percent pipe : {{iDataForPercentPipe | percent }}<br>
+                using percent pipe '1.0-3' : {{iDataForPercentPipe | percent : '1.2-3'}}<br>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">
+                <h1>Question 11</h1>
+            </div>
+            <div class="card-header">
+              <h4 style="color: blue;">Slices Pipe</h4>  
+            </div>
+            <div class="card-body">
+                <input type="text" [(ngModel)]='strDataForSlicePipe1'><br>
+            </div>
+                <div class="card-text">
+                    Original  : {{strDataForSlicePipe1}}<br>
+                    Slicing from positon 2 to 5 : {{strDataForSlicePipe1 | slice: 2:5}}<br>
+                    Slicing from 2nd positon to last2 characters : {{strDataForSlicePipe1 | slice: 2:-3}}<br>
+                    leaving 1st 4 , display rest : {{strDataForSlicePipe1 | slice: 4}}<br>
+                    -5 from last : {{strDataForSlicePipe1 | slice: -5}}<br>
+
+
+                </div>
+        </div>
+        </div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">
+                <h1>Question 12</h1>
+            </div>
+            <div class="card-header">
+              <h4 style="color: blue;">slice dynamically Pipe</h4>  
+            </div>
+            <div class="card-body">
+                <input type="text" [(ngModel)]='strDataForSlicePipe'><br>
+                <input type="text" [(ngModel)]='strN1ForSlicePipe'><br>
+                <input type="text" [(ngModel)]='strN2ForSlicePipe'><br>
+    
+            </div>
+                <div class="card-text">
+                    Original  : {{strDataForSlicePipe}}<br>
+                    Slicing from {{strN1ForSlicePipe}} to {{strN2ForSlicePipe}} : {{strDataForSlicePipe | slice: strN1ForSlicePipe:strN2ForSlicePipe}}<br>
+                </div>
+        </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Question 13</h1>
+                </div>
+                <div class="card-header">
+                  <h4 style="color: blue;">slice ngif Pipe</h4>  
+                </div>
+                <div class="card-body">
+                    <input type="text" [(ngModel)]='strDataForSlicePipe'><br>
+                    <input type="text" [(ngModel)]='strN1ForSlicePipe'><br>
+                    <input type="text" [(ngModel)]='strN2ForSlicePipe'><br>
+        
+                </div>
+                    <div class="card-text">
+                        Original  : {{strDataForSlicePipe}}<br>
+                        <ng-container *ngIf="strN2ForSlicePipe == 0; else second">
+                            Slicing from {{strN1ForSlicePipe}} to {{strN2ForSlicePipe}} : {{strDataForSlicePipe | slice: strN1ForSlicePipe}}<br>
+                            </ng-container>
+
+                        <ng-template #second>
+                            <ng-container *ngIf="strN1ForSlicePipe == 0; else third">
+                                Slicing from {{strN1ForSlicePipe}} to {{strN2ForSlicePipe}} : {{strDataForSlicePipe | slice: strN2ForSlicePipe}}<br>
+
+                        </ng-container>
+                        </ng-template>
+                        <ng-template #third>
+                            Slicing from {{strN1ForSlicePipe}} to {{strN2ForSlicePipe}} : {{strDataForSlicePipe | slice: strN1ForSlicePipe:strN2ForSlicePipe}}<br>
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Question 14</h1>
+                </div>
+                <div class="card-header">
+                  <h4 style="color: blue;">temp converter Pipe</h4>  
+                </div>
+                <div class="card-body">
+                    <input type="text" [(ngModel)]='iFarent'><br>
+        
+                </div>
+                    <div class="card-text">
+                        Original  : {{iFarent}}<br>
+                    Farenheit to Celcius : {{iFarent | tempConverter : 'ToCelcius' | number : '1.0-2' }}<br>
+    
+        
+                </div>
+                <div class="card-body">
+                    <input type="text" [(ngModel)]='iCelcius'><br>
+        
+                </div>
+                    <div class="card-text">
+                        Original  : {{iCelcius}}<br>
+                      Celcius to Farenheit : {{iCelcius | tempConverter : 'ToFaren' | number : '1.0-2' }}<br>
+    
+        
+                </div>
+            </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>Question 15</h1>
+                    </div>
+                    <div class="card-header">
+                      <h4 style="color: blue;">Custom case Pipe</h4>  
+                    </div>
+                    <div class="card-body">
+                        <input type="text" [(ngModel)]='testCase'><br>
+            
+                    </div>
+                        <div class="card-text">
+                            Original  : {{testCase}}<br>
+                        UpperCase : {{testCase | caseConverter : 'testUpper' }}<br>
+                        LoweCase : {{testCase | caseConverter : 'testLower' }}<br>
+                        Capitalize : {{testCase | caseConverter : 'testCapital' }}<br>
+        
+            
+                    </div>
+                </div>
+                </div>
+</div>
+</div>
+
+<br>
+<hr>
+<h1>Question 16</h1>
+<br>
+<div class="container">
+    <h3>User Details</h3>
+    <br>
+    <span>Search</span><input type="text" [(ngModel)]="nameString">
+    <br>
+    <table class="table table-hover table-bordered">
+        <thead style="background-color: cornflowerblue;">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Joining Date</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users | filter:nameString">
+                <td>{{user.firstName}}</td>
+                <td>{{user.lastName}}</td>
+                <td>{{user.dept}}</td>
+                <td>{{user.salary}}</td>
+                <td>{{user.doj|date:'dd/mm/yyyy'}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+<br>
+<button class="btn btn-primary" (click)="addUser()">Add User</button>&nbsp;&nbsp;
+<button class="btn btn-primary" (click)="reset()">reset</button>
+</div>
+<br>
+<hr>
+<h1>Question 17</h1>
+<br>
+<div>
+    {{iNumber1|pure}}
+    {{iNumber2|pure}}
+    {{iNumber1|impure}}
+    {{iNumber2|impure}}
+</div>
+<br>
+<hr>
+<br>
+
+<br>
+<section style="background-color: cornflowerblue; display: flex; justify-content: center;"><font size="+36" ><u>Assignment 4</u></font></section>
+<br>
+<br>
+<div class="row mb-4 mt-3" style="background-image:linear-gradient(to right,hsl(46, 65%, 59%),#a4c251)">
+    <div class="col-3">
+<span>Product Id:</span><input type="text" [(ngModel)]="productId" placeholder="product id"></div>
+<div class="col-3">
+<span>Product Name:</span><input type="text" [(ngModel)]="productName" placeholder="product name"></div>
+<div class="col-3">
+<span>Cost:</span><input type="text" [(ngModel)]="cost" placeholder="cost">
+</div>
+<!--<div  class="options">
+    <input [(ngModel)]="productId" type="number" placeholder="Product Id" style="margin-right: 70px;"> 
+    <input [(ngModel)]="productName" type="test" placeholder="Product Name" style="margin-right: 140px;"> 
+    <input [(ngModel)]="cost" type="number" placeholder="Product Cost" style="margin-right: 70px;">
+    <button (click)="saveProductOfEdit()">Save</button> 
+  </div>
+!-->
+<div *ngIf="isShown" class="col-1">
+<button id= "save" class="btn btn-success" (click)="saveProductOfEdit()">Save</button> 
+</div>
+<div *ngIf="plus" class="col-1">
+<button class="btn btn-primary" (click)="addProduct()">Add User</button>&nbsp;&nbsp;
+
+</div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-2">
+<span></span><input type="text" (keyup)="getProductById()" [(ngModel)]="searchId" placeholder="Search by Id"></div>
+<div class="col-3">
+<span></span><input type="text" (keyup)="getProductByName()" [(ngModel)]="searchName" placeholder="Search by Name">
+</div>
+<div class="col-3"></div> 
+<div class="col-3">
+<button class="btn btn-primary" (click)="getProductData()">Get Products List</button><br>
+</div>
+</div>
+<table class="table table-hover">
+    <thead class="thead-dark" style="background-image: linear-gradient(to right,hsl(59, 79%, 41%),hsl(251, 37%, 49%));">
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Cost</th>
+        <th>Actions</th>
+    </thead>
+    <tbody style="background-image:linear-gradient(to right,#3189b3,rgb(45, 45, 165))">
+       <!--- <tr mat-row *matRowDef="let row; columns: displayedColumns; let i = index"></tr>-->
+        <tr *ngFor="let productObj of arrProductsObjs; index as i" >
+
+            <td>{{productObj.productId}}</td>
+            <td>{{productObj.productName}}</td>
+            <td>{{productObj.cost}}</td>
+            <td><button class="btn btn-danger" (click)="deleteProduct(i)">Delete</button>&nbsp;&nbsp;
+            <button class="btn btn-warning" (click)="editProduct(productObj.productId,productObj.productName,productObj.cost)">Update</button></td>
+
+
+        </tr>
+    </tbody>
+
+</table>
+<br>
+<br>
+<app-child (messageToEmit)="getMessage($event)"></app-child>
+Displaying in parent : {{strMsgFromChild}}
+<button class="btn btn-primary" (click)="getDataFromAnotherComponent()">Get Data</button>
+<br>
+<br>
+<!---
+<h1>This is the Service practice project</h1>
+<br>
+<br>
+<div class="table-container">
+  <div *ngIf="bAddProduct==true" class="options">
+    <input #id type="number" placeholder="Search by Id" style="margin-right: 70px;" (keyup)="searchId(parseInt(id.value))"> <!--using template referece to send input value
+    <input #name type="text" placeholder="Search by Name" style="margin-right: 140px;" (keyup)="searchName(name.value)">
+    <button (click)="getProducts()" style="margin-right: 100px;">Get Products list</button>
+    <button (click)="addProducts()">Add Product</button>
+  </div>
+
+  <div *ngIf="bSaveProduct==true" class="options">
+    <input #productId type="number" placeholder="Product Id" style="margin-right: 70px;"> 
+    <input #productName type="test" placeholder="Product Name" style="margin-right: 140px;"> 
+    <input #productCost type="number" placeholder="Product Cost" style="margin-right: 70px;">
+    <button (click)="saveProduct(parseInt(productId.value),productName.value,parseInt(productCost.value))">Save</button> 
+  </div>
+
+  <div *ngIf="bEditProduct==true" class="options">
+    <input [(ngModel)]="productId" type="number" placeholder="Product Id" style="margin-right: 70px;"> 
+    <input [(ngModel)]="productName" type="test" placeholder="Product Name" style="margin-right: 140px;"> 
+    <input [(ngModel)]="cost" type="number" placeholder="Product Cost" style="margin-right: 70px;">
+    <button (click)="saveProductOfEdit()">Save</button> 
+  </div>
+  <br>
+  <table class="table table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>ProductId</th>
+        <th>ProductName</th>
+        <th>ProductCost</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of arrProductsObjs">
+        <td>{{product.ProductId}}</td>
+        <td>{{product.ProductName}}</td>
+        <td>{{product.cost | currency : 'INR'}}</td>
+        <td>
+          <div class="actions">
+            <div class="delete">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16" style="cursor: pointer;margin-right:40px" (click)="deleteProduct(product.ProductId)">
+                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+              </svg>
+            </div>
+            <div class="edit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16" style="cursor: pointer;" (click)="editProduct(product.ProductId, product.ProductName, product.ProductCost)">
+                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+              </svg>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>-->
+
+<!---<h1>Json Server Data</h1>
+<table class="table table-hover m-t-4">
+    <thead class="thead-dark">
+        <th *ngFor="let header of columns">{{header}}</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let users of arrUsers">
+            <td>{{users.id}}</td>
+            <td>{{users.firstName}}</td>
+            <td>{{users.lastName}}</td>
+            <td>{{users.email}}</td>
+            <td>{{users.location}}</td>
+            <td><button>Edit</button></td>
+            <td><button type="button" class="btn btn-danger" (click)="deleteRow(users.id)">Delete</button></td>
+            <td><button type="button" class="btn btn-primary" (click)="insertRecord()">Update</button></td>
+
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<form [formGroup]='formValue'> 
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" formControlName="firstName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+   <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+Button trigger modal -->
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+-->
+<!--
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  <br>
+ <section style="background-color: cornflowerblue; display: flex; justify-content: center;"><font size="+36" ><u>Assignment 5</u></font></section>
+<br>
+<br>
+  <app-insurance></app-insurance>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<nav class="navbar navbar-dark bg-dark mb-5">
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/product">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/users">users</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/contact">Contact</a>
+            </li>
+            <app-user-login></app-user-login>
+        </ul>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
+<br>
+<a href="#" (click)="logInForAuthGuard()">Login</a><br><br>
+<a href="#" (click)="logOutForAuthGuard()">Logout</a><br>
+    </body>
+</html>
+
