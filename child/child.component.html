@@ -1,0 +1,6 @@
+<!--<h2>This is the message from child component...</h2>
+<p>child works!</p><br>
+<p>Data sent from parent is {{strNameParenToChild}}</p><br>
+<p>Data sent from parent user id : {{loginobj.uid}}</p><br>
+<p>Data sent from parent password : {{loginobj.pwd}}</p>-->
+<input type="text" [(ngModel)]="strData" (keyUp)="sendMessageToParent()">
